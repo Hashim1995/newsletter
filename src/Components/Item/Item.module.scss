@@ -1,0 +1,55 @@
+.main{
+  margin-bottom: 45px;
+  .wrap {
+
+   
+    min-height: 493px;
+    .imgWrap{
+      height: 217px;
+      overflow: hidden;
+      .img{
+        height: 217px;
+        object-fit: cover;
+        transition: var(--transition8);
+        overflow: hidden;
+        &:hover{
+          transition: var(--transition8);
+          transform: scale(1.1);
+         
+        }
+    }
+    }
+   
+    .date {
+      font-size: 14px;
+      color: var(--black);
+      opacity: 0.6;
+      padding-top: 18px;
+      margin: 0;
+      .icon {
+        height: 16px;
+        width: 16px;
+        vertical-align: text-bottom;
+      }
+    }
+    .title {
+      font-size: 24px;
+      color: var(--black);
+      padding-top: 20px;
+      padding-right: 1em;
+      white-space: nowrap;
+    }
+    .text {
+      font-size: 16px;
+      color: var(--black);
+      margin: 20px 0;
+      height: 85px;
+    }
+    .Button {
+      color: var(--black);
+      justify-content: flex-start !important;
+      padding: 0.5em 0.5em 0.5em 0;
+    }
+  }
+  
+}

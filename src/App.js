@@ -1,16 +1,14 @@
 import "./Assets/Global.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
-import Header from "./Pages/Header";
-import Footer from "./Pages/Footer";
+import Articles from "./Pages/Articles";
 function App() {
   return (
     <div className="App">
-      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/article/:articleSlug" element={<Articles />} />
       </Routes>
-      <Footer />
     </div>
   );
 }

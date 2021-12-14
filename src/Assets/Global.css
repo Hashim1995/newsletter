@@ -2,9 +2,16 @@
 html,
 body {
   overflow-x: hidden !important;
-  font-family: 'Montserrat', sans-serif;
-  background-color: var(--light-gray) !important;
+  padding: 0;
+  margin: 0;
+  background-color: var(--light-gray) ;
   scroll-behavior: smooth;
+}
+*{
+  font-family: 'Montserrat', sans-serif !important;
+}
+a{
+  text-decoration: none;
 }
 :root {
     --letter-spacing-1: 1px;
@@ -19,12 +26,13 @@ body {
     --radius18: 18px;
     --radiusCircle: 50%;
     --white: white;
-    --light-gray: #E5E5E5;
+    --light-gray: #fdfdfd;
     --gray: #7c7c7c;
     --border-color: #EAEAEA;
     --red: #a44040;
     --red-opacity: #a440409a;
     --black: #363636;
+    --transition8: 0.8s ease-in-out all;
     --transition6: 0.6s ease-in-out all;
     --transition4: 0.4s ease-in-out all;
     --transition2: 0.2s ease-in-out all;
@@ -49,5 +57,10 @@ body {
   @media (min-width: 1200px) {
     .container {
       width: 1170px;
+    }
+  }
+  @media (min-width: 1500px) {
+    .container {
+      width: 1440px;
     }
   }

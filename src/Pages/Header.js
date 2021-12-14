@@ -1,7 +1,11 @@
-import React from "react";
+import Form from "../Components/Form/Form";
 
 const Header = () => {
-  return <div>header</div>;
+  return (
+    <div>
+      <Form />
+    </div>
+  );
 };
 
 export default Header;
