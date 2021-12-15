@@ -4,11 +4,8 @@ import Typography from "@mui/material/Typography";
 import { SearchOutlined } from "@material-ui/icons";
 import { useDispatch } from "react-redux";
 import { setSearchValue } from "../../Store/searchSlice";
-import { useState } from "react";
 const Form = () => {
   const dispatch = useDispatch();
-
-  const [search, setSearch] = useState(null);
 
   const formHandler = (e) => {
     console.log(e.target.value);
