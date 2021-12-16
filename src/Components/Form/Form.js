@@ -8,36 +8,29 @@ const Form = () => {
   const dispatch = useDispatch();
 
   const formHandler = (e) => {
-    console.log(e.target.value);
     dispatch(setSearchValue(e.target.value));
   };
   return (
-    <div className="container">
-      <div className={Style.wrap}>
-        <Typography className={Style.title} variant="h6">
-          Filter by keywords
-        </Typography>
-        <FormControl style={{ width: "600px" }}>
-          <TextField
-            onChange={formHandler}
-            fullWidth
-            className={Style.inputWrap}
-            variant="outlined"
-            placeholder="Search any word now"
-            InputProps={{
-              startAdornment: (
-                <IconButton>
-                  <SearchOutlined />
-                </IconButton>
-              ),
-            }}
-          />
-        </FormControl>
-        <Typography className={Style.result} variant="h6">
-          Results: 6
-        </Typography>
-        <hr />
-      </div>
+    <div className={Style.wrap}>
+      <Typography className={Style.title} variant="h6">
+        Filter by keywords
+      </Typography>
+      <FormControl style={{ width: "600px" }}>
+        <TextField
+          onChange={formHandler}
+          fullWidth
+          className={Style.inputWrap}
+          variant="outlined"
+          placeholder="Search any word now"
+          InputProps={{
+            startAdornment: (
+              <IconButton>
+                <SearchOutlined />
+              </IconButton>
+            ),
+          }}
+        />
+      </FormControl>
     </div>
   );
 };

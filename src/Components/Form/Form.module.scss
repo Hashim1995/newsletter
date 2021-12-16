@@ -1,5 +1,5 @@
 .wrap{
-    padding: 50px 75px;
+    padding: 50px 75px 0 75px;
     .title{
         color: var(--black);
         font-size: 1em;
@@ -16,12 +16,5 @@
           padding-left: 0;
       }
     }
-    .result{
-        color: var(--black);
-        font-size: 1em;
-        margin-top: 40px;
-    }
-    hr{
-        border-top: 1px solid #EAEAEA;
-    }
+    
 }
