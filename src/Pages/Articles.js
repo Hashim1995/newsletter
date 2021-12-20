@@ -23,10 +23,14 @@ const Articles = () => {
   load();
 
   return (
-    <div>
+    <div className={Style.main}>
       {resData && (
         <>
-          <img src={resData.imageUrl} alt={resData.title} />
+          <img
+            className={Style.background}
+            src={resData.imageUrl}
+            alt={resData.title}
+          />
 
           <div className={`${Style.wrap} container`}>
             <h1>{resData.title}</h1>
@@ -35,6 +39,11 @@ const Articles = () => {
               <img className={Style.icon} src={Calendar} alt="" />{" "}
               {resData.publishedAt.substring(0, 10)}
             </h6>
+            <img
+              className={Style.newImg}
+              src={resData.imageUrl}
+              alt={resData.title}
+            />
             <p>{resData.summary}</p>
 
             <Link to="/">
