@@ -9,6 +9,7 @@ import Calendar from "../../Assets/icons/calendar.svg";
 import { Link } from "react-router-dom";
 const Item = ({ data }) => {
   const {
+    id,
     title,
     summary: description,
     imageUrl: img,
@@ -36,7 +37,7 @@ const Item = ({ data }) => {
             <img className={Style.icon} src={Calendar} alt="" />{" "}
             {date.substring(0, 10)}
           </Typography>
-          <Link to={`/article/${title}`}>
+          <Link to={`/${id}`}>
             <Typography
               title={title}
               className={Style.title}
@@ -55,7 +56,7 @@ const Item = ({ data }) => {
             {description.substring(0, 100) + "..."}
           </Typography>
 
-          <Link to={`/article/${title}`}>
+          <Link to={`/${id}`}>
             <Button
               endIcon={<ArrowRightAltIcon />}
               className={Style.Button}

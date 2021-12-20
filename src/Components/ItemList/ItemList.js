@@ -16,15 +16,11 @@ const ItemList = () => {
 
   useEffect(() => {
     if (data) {
-      let res = data.filter((item, index) => {
-        if (
-          item.title.includes(searchValue) ||
-          item.summary.includes(searchValue)
-        ) {
-          return true;
-        }
+      let res = data.filter((item) => {
+        return (
+          item.title.includes(searchValue) || item.summary.includes(searchValue)
+        );
       });
-      console.log(res.length);
       setFilteredData(res);
     }
   }, [data, searchValue]);
